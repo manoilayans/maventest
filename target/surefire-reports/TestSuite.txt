@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.332 sec <<< FAILURE! - in TestSuite
+testLogin(maventest.maventest)  Time elapsed: 10.33 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at maventest.maventest.testLogin(maventest.java:74)
+
