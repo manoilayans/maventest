@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 
 public class maventest {
 	
-	private String testCaseName;
+	
 	private String methodName;
 	private String testCaseNumber;
 	private String sampleInput;
@@ -71,8 +71,7 @@ public class maventest {
 
 	@Override
 	public String toString() {
-		return "TEST DATA- [testCaseName=" + testCaseName + ", methodName=" + methodName + ", testCaseNumber="
-				+ testCaseNumber + ", sampleInput=" + sampleInput + ", sampleOutput=" + sampleOutput + ", testCaseFlag="
+		return "TEST DATA- [ testCaseNumber= " + testCaseNumber + ", methodName=" + methodName +  ", sampleInput=" + sampleInput + ", sampleOutput=" + sampleOutput + ", testCaseFlag="
 				+ testCaseFlag + "]";
 	}
 	
