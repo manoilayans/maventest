@@ -29,8 +29,8 @@ public class maventest {
 		
 			  
 			   String path = System.getProperty("user.dir");
-			      System.out.println(path + "\\settings.txt");
-			      File file = new File(path + "\\settings.txt");
+			      System.out.println(path + "\\testcaselist.txt");
+			      File file = new File(path + "\\testcaselist.txt");
 		
 
 			           FileReader fr = new FileReader(file);
