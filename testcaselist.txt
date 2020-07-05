@@ -1,1 +1,5 @@
-ganesh,ganesh
+testcase1,methodAdd,5,10,true
+testcase2,methodMul,5,25,false
+testcase3,methodSub,5,0,true
+testcase4,methodDiv,5,1,false
+testcase5,methodSqr,5,25,true

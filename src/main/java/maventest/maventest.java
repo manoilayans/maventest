@@ -17,8 +17,15 @@ import org.testng.annotations.Test;
 
 public class maventest {
 	
+	private String testCaseName;
+	private String methodName;
+	private String testCaseNumber;
+	private String sampleInput;
+	private String sampleOutput;
+	private String testCaseFlag;
+
 	@Test(priority=1)
-	public void testLogin() throws AWTException, MalformedURLException {
+	public void readTestCaseFromGit() throws AWTException, MalformedURLException {
 		
 		   WebDriver driver;
 
@@ -38,8 +45,14 @@ public class maventest {
 			           
 			         
 			          while ((line = br.readLine()) != null) {
-			              user = line.split(",")[0].toLowerCase();
-			       pass = line.split(",")[1].toLowerCase();
+			        	  
+			              testCaseNumber = line.split(",")[0].toLowerCase();
+			              methodName = line.split(",")[1].toLowerCase();
+			              sampleInput = line.split(",")[2].toLowerCase();
+			              sampleOutput = line.split(",")[3].toLowerCase();
+			              testCaseFlag = line.split(",")[4].toLowerCase();
+						    
+			              System.out.println("\n"+ this.toString());
 			           
 			              }
 			          
@@ -51,31 +64,16 @@ public class maventest {
 		
 	      
 	      
-	      System.setProperty("webdriver.ie.driver", "C:\\Program Files (x86)\\Jenkins\\IEDriverServer.exe");
-	      
-	      
 	    
-	      DesiredCapabilities capabilities=DesiredCapabilities.internetExplorer();
-	      driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
-	      System.out.println("Debug 1");
-//	      System.out.println(user);
-      System.out.println(pass);
-	      driver.get("http://45.76.149.118:8081/smcfs/console/login.jsp");
-	      driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);	
-	      driver.findElement(By.name("UserId")).sendKeys(user);
-
-	      driver.findElement(By.name("Password")).sendKeys(pass);
-	      System.out.println("Debug 2");
-	      driver.findElement(By.name("btnLogin")).click();
-	      driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
-	      System.out.println("Debug 3");	  
-	      
-	      String title = driver.getTitle();				 
-			Assert.assertTrue(title.contains("IBM Sterling Selling and Fulfillment Suite: Application Console"));
-
-			driver.quit();
 
 	
+	}
+
+	@Override
+	public String toString() {
+		return "TEST DATA- [testCaseName=" + testCaseName + ", methodName=" + methodName + ", testCaseNumber="
+				+ testCaseNumber + ", sampleInput=" + sampleInput + ", sampleOutput=" + sampleOutput + ", testCaseFlag="
+				+ testCaseFlag + "]";
 	}
 	
 }
