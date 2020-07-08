@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="89" started-at="2020-07-05T12:05:26Z" finished-at="2020-07-05T12:05:26Z">
+  <suite name="Default suite" duration-ms="48" started-at="2020-07-06T13:11:36Z" finished-at="2020-07-06T13:11:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="89" started-at="2020-07-05T12:05:26Z" finished-at="2020-07-05T12:05:26Z">
+    <test name="Default test" duration-ms="48" started-at="2020-07-06T13:11:36Z" finished-at="2020-07-06T13:11:36Z">
       <class name="maventest.maventest">
-        <test-method status="PASS" signature="readTestCaseFromGit()[pri:1, instance:TEST DATA- [ testCaseNumber= null, methodName=null, sampleInput=null, sampleOutput=null, testCaseFlag=null]]" name="readTestCaseFromGit" duration-ms="24" started-at="2020-07-05T12:05:26Z" finished-at="2020-07-05T12:05:26Z">
+        <test-method status="PASS" signature="readTestCaseFromGit()[pri:1, instance:TEST DATA- [ testCaseNumber= null, classAndMethodName=null, sampleInput=null, sampleOutput=null, testCaseFlag=null]]" name="readTestCaseFromGit" duration-ms="16" started-at="2020-07-06T13:11:36Z" finished-at="2020-07-06T13:11:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readTestCaseFromGit -->

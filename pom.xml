@@ -5,22 +5,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>seleniumTesting</name>
   <description>maventest</description>
-
-
-
-
-
-
-
 	<packaging>jar</packaging>
-
-
 	<url>https://repo1.maven.org/maven2/</url>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
 
 <build>
     <plugins>
