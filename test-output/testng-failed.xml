@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="maventest.maventest">
+      <class name="maventest.TestCasesTest">
         <methods>
-          <include name="readTestCaseFromGit"/>
+          <include name="methodAdd"/>
+          <include name="methodDiv"/>
+          <include name="methodMul"/>
+          <include name="beforeSuite"/>
         </methods>
-      </class> <!-- maventest.maventest -->
+      </class> <!-- maventest.TestCasesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

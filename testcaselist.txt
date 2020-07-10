@@ -1,5 +1,5 @@
-testcase1,TestCases.methodAdd,5,10,true
-testcase2,TestCases.methodMul,5,25,false
-testcase3,TestCases.methodSub,5,0,true
-testcase4,TestCases.methodDiv,5,1,false
-testcase5,TestCases.methodSqr,25,5,true
+testcase1,TestCasesTest.methodAdd,5,10,false
+testcase2,TestCasesTest.methodMul,5,25,false
+testcase3,TestCasesTest.methodSub,5,0,true
+testcase4,TestCasesTest.methodDiv,5,1,false
+testcase5,TestCasesTest.methodSqr,25,5,true
