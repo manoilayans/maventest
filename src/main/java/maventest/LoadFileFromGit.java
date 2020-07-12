@@ -10,6 +10,7 @@ import java.util.ArrayList;
 public class LoadFileFromGit {
 	
 	static ArrayList<String> classAndMethodList = new ArrayList<String>();
+	static boolean readTestCaseFromGitFlag = false;
 	public static void readTestCaseFromGit() throws AWTException, MalformedURLException {
 
 		String line= null;
@@ -17,28 +18,37 @@ public class LoadFileFromGit {
 		String testCaseFlag;
 		String classAndMethodName;
 		
-		try {
-
-			String path = System.getProperty("user.dir");
-			System.out.println(path + "\\testcaselist.txt");
-			File file = new File(path + "\\testcaselist.txt");
-
-			FileReader fr = new FileReader(file);
-			BufferedReader br = new BufferedReader(fr);
-			while ((line = br.readLine()) != null) {
-				testCaseNumber = line.split(",")[0].toLowerCase();				
-				testCaseFlag = line.split(",")[4].toLowerCase();
-				
-				if (testCaseNumber != null && testCaseFlag.equals("true")) {					
-					classAndMethodName = line.split(",")[1];
-					classAndMethodList.add(classAndMethodName);					
+		/* Load Testcases only one in a TestSuite 
+		 * Otherwise skip the Fileread operation */
+		if (!readTestCaseFromGitFlag) {		
+			System.out.println("readTestCaseFromGIT and Store the details into Array !");
+			
+			try {
+	
+				String path = System.getProperty("user.dir");
+				System.out.println(path + "\\testcaselist.txt");
+				File file = new File(path + "\\testcaselist.txt");
+	
+				FileReader fr = new FileReader(file);
+				BufferedReader br = new BufferedReader(fr);
+				while ((line = br.readLine()) != null) {
+					testCaseNumber = line.split(",")[0].toLowerCase();				
+					testCaseFlag = line.split(",")[4].toLowerCase();
+					
+					if (testCaseNumber != null && testCaseFlag.equals("true")) {					
+						classAndMethodName = line.split(",")[1];
+						classAndMethodList.add(classAndMethodName);					
+					}
 				}
+				
+				/* Set Flag as True */
+				readTestCaseFromGitFlag = true;
+						
+				fr.close();
+	
+			} catch(Exception e){
+				e.printStackTrace();
 			}
-
-			fr.close();
-
-		}catch(Exception e){
-			e.printStackTrace();
 		}
 	}
 	

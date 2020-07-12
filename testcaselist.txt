@@ -1,5 +1,10 @@
-testcase1,TestCasesTest.methodAdd,5,10,false
-testcase2,TestCasesTest.methodMul,5,25,true
-testcase3,TestCasesTest.methodSub,5,0,false
-testcase4,TestCasesTest.methodDiv,5,1,false
-testcase5,TestCasesTest.methodSqr,25,5,true
+testcase1,ArithmeticOperation.methodAdd,5,10,false
+testcase2,ArithmeticOperation.methodMul,5,25,true
+testcase3,ArithmeticOperation.methodSub,5,0,false
+testcase4,ArithmeticOperation.methodDiv,5,1,true
+testcase5,LogicalOperation.methodOr,25,5,false
+testcase6,LogicalOperation.methodAnd,25,5,true
+testcase7,RelationalOperation.methodLessThan,25,5,false
+testcase8,RelationalOperation.methodLessThanOrEqual,25,5,true
+testcase9,RelationalOperation.methodGreaterThan,25,5,false
+testcase10,RelationalOperation.methodGreaterThanOrEqual,25,5,true

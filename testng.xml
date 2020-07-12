@@ -2,7 +2,9 @@
 <suite name="Suite" parallel="false">
   <test name="Test">
     <classes>
-      <class name="maventest.TestCasesTest"/>
+      <class name="maventest.ArithmeticOperation"/>
+      <class name="maventest.LogicalOperation"/>
+      <class name="maventest.RelationalOperation"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
