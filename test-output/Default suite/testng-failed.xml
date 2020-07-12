@@ -7,8 +7,8 @@
         <methods>
           <include name="methodAdd"/>
           <include name="methodDiv"/>
-          <include name="methodMul"/>
           <include name="beforeSuite"/>
+          <include name="methodSub"/>
         </methods>
       </class> <!-- maventest.TestCasesTest -->
     </classes>

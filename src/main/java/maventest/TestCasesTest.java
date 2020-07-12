@@ -32,42 +32,36 @@ public class TestCasesTest {
      }
 
 	  @Test
-	  public void methodAdd() {
-		  
-		String currentMethod = new Throwable().getStackTrace()[0].getMethodName(); 
-		this.isMethodAllowed(currentMethod);
+	  public void methodAdd() {		  
+		this.isMethodAllowed(new Throwable().getStackTrace()[0].getMethodName());
 	    
 	    Assert.assertEquals("1","1");
 	  }
 	
 	  @Test
 	  public void methodDiv() {
-		 String currentMethod = new Throwable().getStackTrace()[0].getMethodName(); 
-		 this.isMethodAllowed(currentMethod);
+		 this.isMethodAllowed(new Throwable().getStackTrace()[0].getMethodName());
 	    
 		 Assert.assertEquals("1","1");
 	  }
 	
 	  @Test
 	  public void methodMul() {
-		String currentMethod = new Throwable().getStackTrace()[0].getMethodName(); 
-		this.isMethodAllowed(currentMethod);
+		this.isMethodAllowed(new Throwable().getStackTrace()[0].getMethodName());
 		
 		Assert.assertEquals("1","1");
 	  }
 	
 	  @Test
 	  public void methodSqr() {
-		 String currentMethod = new Throwable().getStackTrace()[0].getMethodName(); 
-		 this.isMethodAllowed(currentMethod);
+		 this.isMethodAllowed(new Throwable().getStackTrace()[0].getMethodName());
 		 
 		 Assert.assertEquals("1","1");
 	  }
 	
 	  @Test
 	  public void methodSub() {
-		 String currentMethod = new Throwable().getStackTrace()[0].getMethodName(); 
-		 this.isMethodAllowed(currentMethod);
+		 this.isMethodAllowed(new Throwable().getStackTrace()[0].getMethodName());
 		 
 		 Assert.assertEquals("1","1");
 	  }

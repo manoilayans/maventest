@@ -2,16 +2,16 @@
 <testng-results skipped="3" failed="0" ignored="0" total="5" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="70" started-at="2020-07-10T20:25:53Z" finished-at="2020-07-10T20:25:53Z">
+  <suite name="Suite" duration-ms="52" started-at="2020-07-12T09:52:30Z" finished-at="2020-07-12T09:52:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="70" started-at="2020-07-10T20:25:53Z" finished-at="2020-07-10T20:25:53Z">
+    <test name="Test" duration-ms="52" started-at="2020-07-12T09:52:30Z" finished-at="2020-07-12T09:52:30Z">
       <class name="maventest.TestCasesTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:maventest.TestCasesTest@271053e1]" name="beforeSuite" is-config="true" duration-ms="19" started-at="2020-07-10T20:25:53Z" finished-at="2020-07-10T20:25:53Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:maventest.TestCasesTest@271053e1]" name="beforeSuite" is-config="true" duration-ms="21" started-at="2020-07-12T09:52:30Z" finished-at="2020-07-12T09:52:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="SKIP" signature="methodAdd()[pri:0, instance:maventest.TestCasesTest@271053e1]" name="methodAdd" duration-ms="8" started-at="2020-07-10T20:25:53Z" finished-at="2020-07-10T20:25:53Z">
+        <test-method status="SKIP" signature="methodAdd()[pri:0, instance:maventest.TestCasesTest@271053e1]" name="methodAdd" duration-ms="6" started-at="2020-07-12T09:52:30Z" finished-at="2020-07-12T09:52:30Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[methodAdd]]>
@@ -19,7 +19,7 @@
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: methodAdd
 at maventest.TestCasesTest.isMethodAllowed(TestCasesTest.java:31)
-at maventest.TestCasesTest.methodAdd(TestCasesTest.java:38)
+at maventest.TestCasesTest.methodAdd(TestCasesTest.java:36)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -51,7 +51,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodAdd -->
-        <test-method status="SKIP" signature="methodDiv()[pri:0, instance:maventest.TestCasesTest@271053e1]" name="methodDiv" duration-ms="3" started-at="2020-07-10T20:25:53Z" finished-at="2020-07-10T20:25:53Z">
+        <test-method status="SKIP" signature="methodDiv()[pri:0, instance:maventest.TestCasesTest@271053e1]" name="methodDiv" duration-ms="3" started-at="2020-07-12T09:52:30Z" finished-at="2020-07-12T09:52:30Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[methodDiv]]>
@@ -59,7 +59,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: methodDiv
 at maventest.TestCasesTest.isMethodAllowed(TestCasesTest.java:31)
-at maventest.TestCasesTest.methodDiv(TestCasesTest.java:46)
+at maventest.TestCasesTest.methodDiv(TestCasesTest.java:43)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -91,15 +91,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodDiv -->
-        <test-method status="SKIP" signature="methodMul()[pri:0, instance:maventest.TestCasesTest@271053e1]" name="methodMul" duration-ms="11" started-at="2020-07-10T20:25:53Z" finished-at="2020-07-10T20:25:53Z">
+        <test-method status="PASS" signature="methodMul()[pri:0, instance:maventest.TestCasesTest@271053e1]" name="methodMul" duration-ms="3" started-at="2020-07-12T09:52:30Z" finished-at="2020-07-12T09:52:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodMul -->
+        <test-method status="PASS" signature="methodSqr()[pri:0, instance:maventest.TestCasesTest@271053e1]" name="methodSqr" duration-ms="1" started-at="2020-07-12T09:52:30Z" finished-at="2020-07-12T09:52:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSqr -->
+        <test-method status="SKIP" signature="methodSub()[pri:0, instance:maventest.TestCasesTest@271053e1]" name="methodSub" duration-ms="1" started-at="2020-07-12T09:52:30Z" finished-at="2020-07-12T09:52:30Z">
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[methodMul]]>
+              <![CDATA[methodSub]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: methodMul
+              <![CDATA[org.testng.SkipException: methodSub
 at maventest.TestCasesTest.isMethodAllowed(TestCasesTest.java:31)
-at maventest.TestCasesTest.methodMul(TestCasesTest.java:54)
+at maventest.TestCasesTest.methodSub(TestCasesTest.java:64)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -130,16 +138,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- methodMul -->
-        <test-method status="PASS" signature="methodSqr()[pri:0, instance:maventest.TestCasesTest@271053e1]" name="methodSqr" duration-ms="5" started-at="2020-07-10T20:25:53Z" finished-at="2020-07-10T20:25:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodSqr -->
-        <test-method status="PASS" signature="methodSub()[pri:0, instance:maventest.TestCasesTest@271053e1]" name="methodSub" duration-ms="2" started-at="2020-07-10T20:25:53Z" finished-at="2020-07-10T20:25:53Z">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- methodSub -->
       </class> <!-- maventest.TestCasesTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
