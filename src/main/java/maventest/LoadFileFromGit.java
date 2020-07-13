@@ -6,12 +6,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.InetAddress;
-import java.net.MalformedURLException;
-import java.net.UnknownHostException;
 import java.util.ArrayList;
-
-import org.apache.maven.surefire.booter.SystemUtils;
 
 public class LoadFileFromGit {
 	
@@ -34,16 +29,27 @@ public class LoadFileFromGit {
 			String hostname = new BufferedReader(
 				    new InputStreamReader(Runtime.getRuntime().exec("hostname").getInputStream()))
 				   .readLine();
-			String os = System.getProperty("os.name");
+			String os = System.getProperty("os.name").toLowerCase();
+			String fileSeparator = System.getProperty("file.separator");
 
 	        System.out.println("OS:" + os);
 	        System.out.println("HostName:" + hostname);
+	        System.out.println("fileSeparator:" + fileSeparator);
 	        
 			try {
 	
 				String path = System.getProperty("user.dir");
-				System.out.println(path + "\\testcaselist.csv");
-				File file = new File(path + "\\testcaselist.csv");
+				String slashType = "\\";
+				if (os.contains("windows")) {
+					slashType = "\\";
+				} else {
+					slashType = "/";
+				}
+				
+				System.out.println("slashType using OS:" + slashType);
+				
+				System.out.println(path + fileSeparator +"testcaselist.csv");
+				File file = new File(path + fileSeparator +"testcaselist.csv");
 	
 				FileReader fr = new FileReader(file);
 				BufferedReader br = new BufferedReader(fr);

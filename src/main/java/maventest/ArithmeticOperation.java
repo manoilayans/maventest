@@ -4,12 +4,8 @@ import org.testng.annotations.Test;
 
 import java.awt.AWTException;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.UnknownHostException;
-
 import org.testng.Assert;
 import org.testng.SkipException;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import maventest.LoadFileFromGit;
 

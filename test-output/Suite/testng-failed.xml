@@ -3,6 +3,12 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="maventest.LogicalOperation">
+        <methods>
+          <include name="methodAnd"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- maventest.LogicalOperation -->
       <class name="maventest.RelationalOperation">
         <methods>
           <include name="methodGreaterThan"/>
@@ -20,12 +26,6 @@
           <include name="methodMul"/>
         </methods>
       </class> <!-- maventest.ArithmeticOperation -->
-      <class name="maventest.LogicalOperation">
-        <methods>
-          <include name="methodAnd"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- maventest.LogicalOperation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
