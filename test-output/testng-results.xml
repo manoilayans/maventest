@@ -2,12 +2,12 @@
 <testng-results skipped="7" failed="0" ignored="0" total="10" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="116" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
+  <suite name="Suite" duration-ms="100" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="116" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
+    <test name="Test" duration-ms="100" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
       <class name="maventest.RelationalOperation">
-        <test-method status="SKIP" signature="methodGreaterThan()[pri:0, instance:maventest.RelationalOperation@59ec2012]" name="methodGreaterThan" duration-ms="3" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
+        <test-method status="SKIP" signature="methodGreaterThan()[pri:0, instance:maventest.RelationalOperation@59ec2012]" name="methodGreaterThan" duration-ms="2" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[methodGreaterThan]]>
@@ -47,7 +47,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodGreaterThan -->
-        <test-method status="SKIP" signature="methodGreaterThanOrEqual()[pri:0, instance:maventest.RelationalOperation@59ec2012]" name="methodGreaterThanOrEqual" duration-ms="2" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
+        <test-method status="SKIP" signature="methodGreaterThanOrEqual()[pri:0, instance:maventest.RelationalOperation@59ec2012]" name="methodGreaterThanOrEqual" duration-ms="3" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[methodGreaterThanOrEqual]]>
@@ -87,11 +87,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodGreaterThanOrEqual -->
-        <test-method status="PASS" signature="methodLessThan()[pri:0, instance:maventest.RelationalOperation@59ec2012]" name="methodLessThan" duration-ms="1" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
+        <test-method status="PASS" signature="methodLessThan()[pri:0, instance:maventest.RelationalOperation@59ec2012]" name="methodLessThan" duration-ms="2" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodLessThan -->
-        <test-method status="SKIP" signature="methodLessThanOrEqual()[pri:0, instance:maventest.RelationalOperation@59ec2012]" name="methodLessThanOrEqual" duration-ms="2" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
+        <test-method status="SKIP" signature="methodLessThanOrEqual()[pri:0, instance:maventest.RelationalOperation@59ec2012]" name="methodLessThanOrEqual" duration-ms="2" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[methodLessThanOrEqual]]>
@@ -133,37 +133,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
         </test-method> <!-- methodLessThanOrEqual -->
       </class> <!-- maventest.RelationalOperation -->
       <class name="maventest.LogicalOperation">
-        <test-method status="PASS" signature="methodAnd()[pri:0, instance:maventest.LogicalOperation@402a079c]" name="methodAnd" duration-ms="6" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodAnd -->
-        <test-method status="PASS" signature="methodOr()[pri:0, instance:maventest.LogicalOperation@402a079c]" name="methodOr" duration-ms="2" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodOr -->
-      </class> <!-- maventest.LogicalOperation -->
-      <class name="maventest.ArithmeticOperation">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:maventest.ArithmeticOperation@6500df86]" name="beforeSuite" is-config="true" duration-ms="55" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:maventest.LogicalOperation@402a079c]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:maventest.RelationalOperation@59ec2012]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="SKIP" signature="methodAdd()[pri:0, instance:maventest.ArithmeticOperation@6500df86]" name="methodAdd" duration-ms="9" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
+        <test-method status="SKIP" signature="methodAnd()[pri:0, instance:maventest.LogicalOperation@402a079c]" name="methodAnd" duration-ms="2" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[methodAdd]]>
+              <![CDATA[methodAnd]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: methodAdd
-at maventest.ArithmeticOperation.isMethodAllowed(ArithmeticOperation.java:31)
-at maventest.ArithmeticOperation.methodAdd(ArithmeticOperation.java:36)
+              <![CDATA[org.testng.SkipException: methodAnd
+at maventest.LogicalOperation.isMethodAllowed(LogicalOperation.java:31)
+at maventest.LogicalOperation.methodAnd(LogicalOperation.java:43)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -194,8 +172,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- methodAnd -->
+        <test-method status="PASS" signature="methodOr()[pri:0, instance:maventest.LogicalOperation@402a079c]" name="methodOr" duration-ms="2" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodOr -->
+      </class> <!-- maventest.LogicalOperation -->
+      <class name="maventest.ArithmeticOperation">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:maventest.ArithmeticOperation@6500df86]" name="beforeSuite" is-config="true" duration-ms="12" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:maventest.LogicalOperation@402a079c]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:maventest.RelationalOperation@59ec2012]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="methodAdd()[pri:0, instance:maventest.ArithmeticOperation@6500df86]" name="methodAdd" duration-ms="11" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- methodAdd -->
-        <test-method status="SKIP" signature="methodDiv()[pri:0, instance:maventest.ArithmeticOperation@6500df86]" name="methodDiv" duration-ms="2" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
+        <test-method status="SKIP" signature="methodDiv()[pri:0, instance:maventest.ArithmeticOperation@6500df86]" name="methodDiv" duration-ms="5" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[methodDiv]]>
@@ -235,7 +235,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodDiv -->
-        <test-method status="SKIP" signature="methodMul()[pri:0, instance:maventest.ArithmeticOperation@6500df86]" name="methodMul" duration-ms="2" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
+        <test-method status="SKIP" signature="methodMul()[pri:0, instance:maventest.ArithmeticOperation@6500df86]" name="methodMul" duration-ms="3" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[methodMul]]>
@@ -275,7 +275,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodMul -->
-        <test-method status="SKIP" signature="methodSub()[pri:0, instance:maventest.ArithmeticOperation@6500df86]" name="methodSub" duration-ms="1" started-at="2020-07-13T06:48:04Z" finished-at="2020-07-13T06:48:04Z">
+        <test-method status="SKIP" signature="methodSub()[pri:0, instance:maventest.ArithmeticOperation@6500df86]" name="methodSub" duration-ms="3" started-at="2020-07-13T10:28:11Z" finished-at="2020-07-13T10:28:11Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[methodSub]]>

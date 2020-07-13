@@ -15,8 +15,7 @@ public class LoadFileFromGit {
 
 		String line= null;
 		String testCaseNumber;
-		String testCaseFlag;
-		String classAndMethodName;
+		String testCaseClassMethod;
 		
 		/* Load Testcases only one in a TestSuite 
 		 * Otherwise skip the Fileread operation */
@@ -26,18 +25,17 @@ public class LoadFileFromGit {
 			try {
 	
 				String path = System.getProperty("user.dir");
-				System.out.println(path + "\\testcaselist.txt");
-				File file = new File(path + "\\testcaselist.txt");
+				System.out.println(path + "\\testcaselist.csv");
+				File file = new File(path + "\\testcaselist.csv");
 	
 				FileReader fr = new FileReader(file);
 				BufferedReader br = new BufferedReader(fr);
 				while ((line = br.readLine()) != null) {
 					testCaseNumber = line.split(",")[0].toLowerCase();				
-					testCaseFlag = line.split(",")[4].toLowerCase();
+					testCaseClassMethod = line.split(",")[1];
 					
-					if (testCaseNumber != null && testCaseFlag.equals("true")) {					
-						classAndMethodName = line.split(",")[1];
-						classAndMethodList.add(classAndMethodName);					
+					if (testCaseNumber != null && !testCaseClassMethod.equals("")) {					
+						classAndMethodList.add(testCaseClassMethod);					
 					}
 				}
 				

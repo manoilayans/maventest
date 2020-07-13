@@ -1,0 +1,3 @@
+monarch_testcase_01,ArithmeticOperation.methodAdd,5,10
+monarch_testcase_05,LogicalOperation.methodOr,25,5
+monarch_testcase_07,RelationalOperation.methodLessThan,25,5
